@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 18px 7%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #4f46e5;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #e0e7ff;
+    color: #4338ca;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+    color: #111827;
+}
+
+.hero p:not(.badge) {
+    max-width: 650px;
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.primary-btn {
+    display: inline-block;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.primary-btn:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+
+/* SECTION */
+
+.section {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.small-title {
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.section-heading p:last-child {
+    color: #6b7280;
+}
+
+
+/* CARD */
+
+.card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+/* FORM */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px
